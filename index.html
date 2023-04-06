@@ -256,13 +256,13 @@ border:2px dashed blue;
 	<h3>35.Dir tag</h3>
 	<p>Not supported in html5</p>
 	<hr>
+	
 	<h3>36.Divide tag< div></h3>
 	<div class="palace">
 	<h3>Mysore Palace</h3>
 	<p>Mysore Palace, also known as Amba Vilas Palace, is a historical palace and a royal residence (house). It is located in Mysore, Karnataka.</p>
 	</div>
-	
-	<div id="goa">
+    <div id="goa">
 	<h3>Beaches in Goa</h3>
 	<p>Baga beach,Candolim beach,Morijm beach</p>
 	</div>
@@ -401,8 +401,8 @@ border:2px dashed blue;
 <hr>
 
 <h3>63.Link tag< link></h3>
-<p>used to link script,style files</p>
-<link href="" rel="">
+<p>used to link script,external style sheet,favicon</p>
+
 <hr>
 
 <h3>64.Legend tag< legend></h3>
@@ -420,30 +420,318 @@ border:2px dashed blue;
  <hr>
 
 <h3>65.Main tag< main></h3>
+<main><p>It specifies the main content of a document.</p></main>
+<hr>
 
-<h3>66.Mark tag< mark></h3>
+<h3>66.Map tag < map></h3>
+<p>refer area tag</h3>
+<hr>
+
+<h3>67.Mark tag< mark></h3>
 <p><mark>Wise and other wise</mark> book by Sudha Murthy</p>
 <p> default ah yellow color</p>
 <hr>
 
-<h3>67.Meta tag< meta></h3>
-<h3>68.Meter tag< meter>,/h3>
-<h3>69.Navigation bar tag< nav></h3>
-<h3>70.Noframes tag< noframe></h3>
-<h3>71.Noscript tag< noscript></h3>
-<h3>72.Object tag< object></h3>
-<h3>73.Ordered list tag< ol></h3>
-<h3>74.optgroup tag < optgroup></h3>
-<h3>75.option tag< option></h3>
-<h3>76.Output tag< output></h3>
-<h3>77.Paragraph tag< p></h3>
-<h3>78.Param tag< param></h3>
-<h3>79.Picture tag< picture></h3>
-<h3>80.Pre tag< pre></h3>
-<h3>81.Progress tag< progress></h3>
-<h3>82.rp< tp></h3>
-<h3>83.rt< rt></h3>
-<h3>84.ruby< ruby></h3>
+<h3>68.Meta tag< meta></h3>
+<p>Meta  tag information are in head.to specify character set, page description, keywords, author of the document, and viewport settings. </p>
+<!--<meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,React,JavaScript">
+  <meta name="" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <hr>
+  
+<h3>69.Meter tag< meter></h3>
+<meter value="30"max="250"></meter>
+<hr>
+
+<h3>70.Navigation bar tag< nav></h3>
+<nav>
+<a href="">HOME</a>|
+<a href="">IMAGE</a>|
+<a href="">ABOUT US</a>|
+<a href="">CONTACT US</a>|
+</nav>
+<hr>
+
+<h3>71.Noframes tag< noframe></h3>
+<p>Not supported in html5 </p>
+<hr>
+
+<h3>72.Noscript tag< noscript></h3>
+<p>Use in js</p>
+<hr>
+
+<h3>73.Object tag< object></h3>
+<p>object tag -->object data="img,audio,video,iframe" better 
+to use individual tags</p>
+<!--<object data="img/audio/video/iframe link" width="" height=""></object>-->
+<hr>
+
+<h3>74.Ordered list tag< ol></h3>
+<ol>
+<li>Mango</li>
+<li>Apple</li>
+<li>Orange</li>
+<li>Pine apple</li>
+</ol>
+<ol start="25"><!-- start->numbers only works-->
+<li>Mango</li>
+<li>Apple</li>
+<li>Orange</li>
+<li>Pine apple</li>
+</ol>
+<ol type="A"><!--type="a",type="I"-->
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<hr>
+
+<h3>75.&76. option< option> & optgroup tag < optgroup></h3>
+<label for="cric">MY FAV CRICKETERS:</label>
+<select id="cric" name="cric" multiple>
+<optgroup label="batsman">
+<option value="virat">Virat</option>
+<option value="rohit">Rohit</option>
+<option value="dhoni">Dhoni</option></optgroup>
+<optgroup label="bowlers">
+<option value="ashwin">Ashwin</option>
+<option value="bhuvaneswar kumar">Bhuvaneswar kumar</option>
+</optgroup>
+</select>
+<hr>
+
+<h3>77.Output tag< output></h3>
+<p>Used in js-calculation</p>
+<hr>
+
+<h3>78.Paragraph tag< p></h3>
+<p>Mysore Palace, also known as Amba Vilas Palace, is a historical palace and a royal residence (house). It is located in Mysore, Karnataka.</p>
+<hr>
+
+<h3>79.Param tag< param></h3>
+<p>define parameters for an object tag element.</p>
+<!--<object data="img/audio/video link">
+<param name="autoplay" value="true">
+</object>-->
+<hr>
+
+<h3>80.Picture tag< picture></h3>
+<picture>
+<source media="(min-width:850px)" srcset="image/laptop.jpg">
+<source media="(min-width:700px)" srcset="image/virat.jpg">
+<img src="./image/pinky.jpg" alt="flower" style="width:auto;">
+</picture>
+<hr>
+
+<h3>81.Pre tag< pre></h3>
+<p>as like code,kbd,samp</p>
+<pre>Mysore Palace, also known as Amba Vilas Palace, is a historical 
+  palace and a royal residence (house). It is located in Mysore, Karnataka.</pre>
+<hr>
+
+<h3>82.Progress tag< progress></h3>
+<p>progress bar will be created to monitor the downloading</p>
+
+<label for="load">Downloading progress:</label>
+<progress id="load" value="32" max="100"> 32% </progress>
+<hr>
+
+<h3>83.Quotation tag< q></h3>
+<p>q for shrot quotes.blockquotes for long quotes.</p>
+<q>Whatever we do in anger it will be out of control.Be good to be calm and keep anger out.</q>
+<hr>
+<h3>84.rp< rp></h3>
+<h3>85.rt< rt></h3>
+<h3>86.ruby< ruby></h3>
+<h3>87.s tag</h3>
+<p>discount price</p>
+<s>Rs.600</s><p>Rs.540</p>
+<hr>
+
+<h3>88.Sample tag</h3>
+<p><samp>The content inside is displayed in the browser's default monospace font.</samp></p>
+<hr>
+
+<h3>89.Script tag</h3>
+<script>alert("click ok") </script>
+
+<hr>
+
+<h3>90.Section tag</h3>
+   <section>Potential energy is stored energy and the energy of position.</section>
+	
+	<section>Kinetic energy is the motion of waves, electrons, atoms, molecules, substances, and objects.</section>
+	<hr>
+	
+<h3>91.Select tag</h3>
+<p>To create a dropdown list.</p>
+<label for="cric">MY FAV CRICKETERS:</label>
+<select id="cric" name="cric" >
+<option value="virat">Virat</option>
+<option value="virat">Virat</option>
+<option value="rohit">Rohit</option>
+<option value="dhoni">Dhoni</option>
+<option value="ashwin">Ashwin</option>
+</select>
+<hr>
+
+<h3>92.Small tag</h3>
+<p style="color:green;">Smaller than the previous content</p>
+    <p>Pune is a sprawling city in the western Indian state of Maharashtra.</p><small>It was once the base of the Peshwas(prime ministers) of the Maratha Empire, which lasted from 1674 to 1818.</small>
+		<hr>
+		
+<h3>93.Source tag</h3>
+<p>Source is used in image,audio,video tags</p>
+<audio src="./audio/rahman.mp3" controls autoplay type=".mp3" muted></audio>
+<hr>
+
+<h3>94.Span tag</h3>
+<p>span is an inline element.</p>
+<p>Mysore Palace, also known as <span style="color:blue;">Amba Vilas Palace,</span> is a historical palace and a royal residence (house). It is located in <span style="font-family:cursive;">Mysore, Karnataka.</span></p>
+<hr>
+
+<h3>95.Strike tag</h3>
+<p>Not supported in html5.</p>
+<hr>
+
+<h3>96.Strong tag</h3>
+<p>strong is an important text.</p>
+<p>Indian technological organisation <strong>ISRO,Infosys,Wipro and HAL </strong>are headquartered in the city Bangalore.</p>
+<hr>
+
+<h3>97.Style tag</h3>
+<p>To style the html document.</p>
+<p>Three types of styles-External,Internal,Inline</p>
+<h3>Example for inlne style</h3>
+<p style="color:blue;">Wise and Otherwise book was written by Sudha Murthy</p>
+<hr>
+
+<h3>98.Subscript tag< sub></h3>
+<p>H<sub>2</sub>O.
+<hr>
+
+<h3>99.Summary tag</h3>
+<details>online course
+<summary>Fabevy</summary>
+</details>
+<hr>
+	
+<h3>100.Superscript tag< sup></h3>
+a<sup>2</sup>+b<sup>2</sup>=(a+b)<sup>2</sup>
+<hr>
+
+<h3>101.Svg tag</h3>
+
+<h3>102.Table tag</h3>
+<p>table,thead,tbody(group the body content),tfoot,tr,th,td</p>
+<table style="border 1px solid black">
+	<thead>
+	<tr>
+	<th>data 1</th>
+	<th>data 2</th>
+	<th>data 3</th>
+	</thead>
+	</tr>
+	
+	<tbody>
+	<tr>
+	<td>A</td>
+	<td>B</td>
+	<td>C</td>
+	</tr>
+	</tbody>
+	
+	<tfoot>
+	<tr>
+	<td>D</td>
+	<td>E</td>
+	<td>F</td>
+	</tr>
+	</tfoot>
+	
+	</table>
+	<hr>
+	
+<h3>103.tbody tag</h3>
+<h3>104.td tag</h3>
+<h3>105.Template tag</h3>
+<p>Used in js</p>
+<hr>
+
+<h3>106.Textarea tag</h3>
+<textarea rows="6" cols="20">about html...</textarea>
+<hr>
+
+<h3>107.tfoot tag</h3>
+<h3>108.th tag</h3>
+<p>By default th-elements are bold and align in center.</p>
+<hr>
+
+<h3>109.thead tag</h3>
+<h3>110.Time tag</h3>
+<p>time tag-->indicates specific time</p>
+<p>class timing <time>10am</time> to <time>1pm</time></p>
+<hr>
+
+<h3>111.Title tag</h3>
+<p>Title used in head tag.Shown in browser's title bar.</p>
+<hr>
+
+<h3>112.tr tag</h3>
+<h3>113.Track tag</h3>
+<h3>114.tt tag</h3>
+<p>Not supported in html5</p>
+<hr>
+
+<h3>115.Underline tag< u></h3>
+<p><u>Wise and Otherwise</u> book was written by Sudha Murthy</p>
+<hr>
+
+<h3>116.Unordered list< ul> tag</h3>
+<ul>
+<li>Mango</li>
+<li>Apple</li>
+<li>Orange</li>
+<li>Pine apple</li>
+</ul>
+<ul style="list-style-type:circle">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<ul style="list-style-type:square">
+<li>Mango</li>
+<li>Apple</li>
+<li>Orange</li>
+<li>Pine apple</li>
+</ul>
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+<hr>
+
+<h3>117.Variable< var> tag</h3>
+<p>used in js</p>
+<hr>
+
+<h3>118.Video< video> tag</h3>
+<video width="300px" height="200px"controls>
+<source src="" type="">
+</video>
+<hr>
+
+<h3>119.Word break< wbr> tag</h3>
+<p>wbr tag is used to specify a linebreakopportunitywithinanHTMLdocumentWithoutwbrtagitisverydifficulttoreada<wbr>longsinglewordorasentencelinebreakopportunitywithinanHTMLdocumentWithoutwbrtagitisverydifficulttoreadalongsinglewordorasentence</p>
+
 
 
 
